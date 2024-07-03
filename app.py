@@ -32,9 +32,9 @@ def home():
             print(f"Prediction: {result}")
 
             if result[0] == 1:
-                result = "Your Email is Spam"
+                result = "Your SMS is Spam"
             else:
-                result = "Your Email is Ham"
+                result = "Your SMS is Ham"
         except ValueError as e:
             print("Error in text preprocessing:", e)
     return render_template('index.html', result=result)
